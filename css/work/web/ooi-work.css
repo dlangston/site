@@ -15,6 +15,11 @@
   border-radius: 12px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+
   /* border-bottom-right-radius: 0px; */
 }
 
@@ -31,4 +36,30 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   width: 113%;
+}
+
+#title-container {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }

@@ -7,21 +7,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dan Langston</title>
+    <title>Start Bootstrap - Scrolling Nav</title>
 
-    <!-- Bootstrap & Fonts -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap & Fonts  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css" >
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/scrolling-nav2.css" type="text/css">
-
+    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css" />
     <link rel="stylesheet" type="text/css" href="css/sections.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/selector.css" />
-
     <link rel="stylesheet" href="css/jquery.parallax.css" />
-
   </head>
 
   <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -50,7 +47,7 @@
               <a href="#about">About</a>
             </li>
             <li class="page-scroll">
-              <a href="#work">Work</a>
+              <a href="#services">Work</a>
             </li>
             <li class="page-scroll">
               <a href="#contact">Contact</a>
@@ -63,7 +60,7 @@
     </nav>
 
     <section id="intro" class="intro-section">
-      <div class="container container-title self-image">
+      <div class="container container-title">
         <div class="row">
           <div class="col-lg-12">
             <h1>Dan Langston</h1>
@@ -72,6 +69,8 @@
           </div>
         </div>
       </div>
+
+      <!-- parallax -->
       <div id="port">
         <img class="parallax-layer" src="img/port-self-red-new.png" alt="" style="width:1031px; height:343px;"/> 
         <img class="parallax-layer" src="img/port-self-red-new.png" alt="" style="width:1067px; height:355px;"/>
@@ -83,99 +82,97 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1>About</h1>
+            <h1>About Section</h1>
             <br>
-            <p class="about-me">I am often asked, “Why computer science and art?” For me it was an obvious marriage of two of my greatest obsessions. I have always been curious how things work, whether it be taking apart my Star Wars toys as a child or building my own 3D printer as an adult. I am fascinated with the illusion often associated with design, fine art, and media  In a journey of discovery, coding was the next logical step to provide me with an output for my artistic vision. What I was not expecting was along the way another output would arise in the form and function of the code itself. The running program became the illusion produced by the code that created it. I began to thrive for perfection in my code, a perfection that you can feel in creation, the wonder of mathematics, the beauty of physics, the illation of action and reaction.  I am eager to find a position in an energetic, creative, and fast-paced environment that will utilize my diverse experience, leadership and passion in web and software development, while building cutting edge mobile and desktop applications.</p>
+            <div class="col-lg-10 col-lg-offset-1">
+              <p class="about-me">I am often asked, “Why computer science and art?” For me it was an obvious marriage of two of my greatest obsessions. I have always been curious how things work, whether it be taking apart my Star Wars toys as a child or building my own 3D printer as an adult. I am fascinated with the illusion often associated with design, fine art, and media  In a journey of discovery, coding was the next logical step to provide me with an output for my artistic vision. What I was not expecting was along the way another output would arise in the form and function of the code itself. The running program became the illusion produced by the code that created it. I began to thrive for perfection in my code, a perfection that you can feel in creation, the wonder of mathematics, the beauty of physics, the illation of action and reaction.  I am eager to find a position in an energetic, creative, and fast-paced environment that will utilize my diverse experience, leadership and passion in web and software development, while building cutting edge mobile and desktop applications.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services-section">
-      <!-- <section id="work" class="services&#45;section"> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <a name="work"></a>
-            <h1>Work</h1>
-
-
-
-            <br>
-            <div class="ff-container">
-              <input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
-              <label for="select-type-all" class="ff-label-type-all">All</label>
-              <input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
-              <label for="select-type-1" class="ff-label-type-1">Web Design</label>
-              <input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
-              <label for="select-type-2" class="ff-label-type-2">Medical Simulation</label>
-              <input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3" />
-              <label for="select-type-3" class="ff-label-type-3">Art</label>
-              <!-- Portfolio Projects -->
-              <div class="clr"></div>
-              <ul class="ff-items">
-                <li class="ff-item-type-1">
-                  <a href="ooiWork.html">
-                    <!-- <a data&#45;target="#ooi&#45;work&#45;modal" data&#45;toggle="modal"> -->
-                    <span>Ocean Observitory Inistitive (OOI)</span>
-                    <img class="thumb-img" src="img/work/thumbs/image01-ooi-thumb.png" />
+    <!-- **changing height of .work-section from 100% to auto fixed 
+      overflow, but messes up the sections sizing on scorll** -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <a name="work"></a>              
+              <h1>Work</h1>
+              <br>
+              <div class="ff-container">
+                <input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
+                <label for="select-type-all" class="ff-label-type-all">All</label>
+                <input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
+                <label for="select-type-1" class="ff-label-type-1">Web Design</label>
+                <input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
+                <label for="select-type-2" class="ff-label-type-2">Medical Simulation</label>
+                <input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3" />
+                <label for="select-type-3" class="ff-label-type-3">Art</label>
+                <!-- Portfolio Projects -->
+                <div class="clr"></div>
+                <ul class="ff-items">
+                  <li class="ff-item-type-1">
+                    <a href="ooiWork.html">
+                      <!-- <a data&#45;target="#ooi&#45;work&#45;modal" data&#45;toggle="modal"> -->
+                      <span>Ocean Observitory Inistitive (OOI)</span>
+                      <img class="thumb-img" src="img/work/thumbs/image01-ooi-thumb.png" />
+                      </a>
+                  </li>
+                  <li class="ff-item-type-2">
+                    <a href="">
+                      <span>COMETS</span>
+                      <img class="thumb-img" src="img/work/thumbs/image04-comets-tumb.png" />
                     </a>
-                </li>
-                <li class="ff-item-type-2">
-                  <a href="">
-                    <span>COMETS</span>
-                    <img class="thumb-img" src="img/work/thumbs/image04-comets-tumb.png" />
-                  </a>
-                </li>
-                <li class="ff-item-type-2">
-                  <a href="">
-                    <span>Ocular Sutur</span>
-                    <img class="thumb-img" src="img/work/thumbs/image05-eye-sutur-thumb.png" />
-                  </a>
-                </li>
-                <li class="ff-item-type-1">
-                  <a href="charter.html">
-                    <span>Charter.net</span>
-                    <img class="thumb-img" src="img/work/thumbs/image03-charter-thumb.png" style="width:160px"/>
-                  </a>
-                </li>
-                <li class="ff-item-type-3">
-                  <a href="">
-                    <span>art</span>
-                    <!-- <img class="thumb-img" src="img/work/thumbs/ /> -->
-                  </a>
-                </li>
-                <li class="ff-item-type-1">
-                  <a href="ooi-landing.html">
-                    <span>RPS ASA Ocean Observitory Inistitive (OOI)Landing Page</span>
-                    <img class="thumb-img" src="img/work/thumbs/image07-rps-asa-landing-thumb.png" style="width:160px"/>
-                  </a>
-                </li>
-                <li class="ff-item-type-3">
-                  <a href="">
-                    <span>art</span>
-                    <!-- <img class="thumb-img" src="img/images/8.jpg" /> -->
-                  </a>
-                </li>
-                <li class="ff-item-type-1">
-                  <a href="bhn.html">
-                    <span>Brochure Holders Now</span>
-                    <img class="thumb-img" src="img/work/thumbs/image06-brochure-thumb.png" style="width:160px"/>
-                  </a>
-                </li>
-                <li class="ff-item-type-1">
-                  <a href="army-corps.html">
-                    <span>Army Corps Of Engineers</span>
-                    <img class="thumb-img" src="img/work/thumbs/image02-armcorps-thumb.png" style="width:160px" />
-                  </a>
-                </li>
-              </ul>
+                  </li>
+                  <li class="ff-item-type-2">
+                    <a href="">
+                      <span>Ocular Sutur</span>
+                      <img class="thumb-img" src="img/work/thumbs/image05-eye-sutur-thumb.png" />
+                    </a>
+                  </li>
+                  <li class="ff-item-type-1">
+                    <a href="charter.html">
+                      <span>Charter.net</span>
+                      <img class="thumb-img" src="img/work/thumbs/image03-charter-thumb.png" style="width:160px"/>
+                    </a>
+                  </li>
+                  <li class="ff-item-type-3">
+                    <a href="">
+                      <span>art</span>
+                      <!-- <img class="thumb-img" src="img/work/thumbs/ /> -->
+                    </a>
+                  </li>
+                  <li class="ff-item-type-1">
+                    <a href="ooi-landing.html">
+                      <span>RPS ASA Ocean Observitory Inistitive (OOI)Landing Page</span>
+                      <img class="thumb-img" src="img/work/thumbs/image07-rps-asa-landing-thumb.png" style="width:160px"/>
+                    </a>
+                  </li>
+                  <li class="ff-item-type-3">
+                    <a href="">
+                      <span>art</span>
+                      <!-- <img class="thumb-img" src="img/images/8.jpg" /> -->
+                    </a>
+                  </li>
+                  <li class="ff-item-type-1">
+                    <a href="bhn.html">
+                      <span>Brochure Holders Now</span>
+                      <img class="thumb-img" src="img/work/thumbs/image06-brochure-thumb.png" style="width:160px"/>
+                    </a>
+                  </li>
+                  <li class="ff-item-type-1">
+                    <a href="army-corps.html">
+                      <span>Army Corps Of Engineers</span>
+                      <img class="thumb-img" src="img/work/thumbs/image02-armcorps-thumb.png" style="width:160px" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-
           </div>
         </div>
-      </div>
       </section>
 
       <section id="contact" class="contact-section">
@@ -184,7 +181,7 @@
             <div class="col-lg-12">
               <h1>Contact</h1>
               <br>
-              <h3>dan@danlangston.com</h3>
+              <h2>dan@danlangston.com</h2>
             </div>
           </div>
         </div>
@@ -194,13 +191,13 @@
       <script src="js/jquery-1.10.2.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.easing.min.js"></script>
-      <script src="js/jquery.parallax.js"></script>
 
+      <!-- Custom Theme JavaScript -->
+      <script src="js/scrolling-nav.js"></script>
+
+      <!-- parallax -->
       <script src="../js/jquery.parallax.js"></script>
-
-
       <script type="text/javascript">
-
 jQuery(document).ready(function(){
   // Declare parallax on layers
   jQuery('.parallax-layer').parallax({
@@ -209,56 +206,6 @@ jQuery(document).ready(function(){
 });
       </script>
 
-      <!-- Custom Theme JavaScript -->
-      <script src="js/scrolling-nav.js"></script>
-
   </body>
 
 </html>
-
-<!--  -->
-<!-- <div class="modal fade" id="ooi&#45;work&#45;modal" role="dialog"> -->
-<!--   <div class="modal&#45;dialog modal&#45;lg"> -->
-<!--     <div class="modal&#45;content"> -->
-<!--  -->
-<!--       <!&#45;&#45; left side &#45;&#45;> -->
-<!--       <div class="modal&#45;body"> -->
-<!--         <div class="container"> -->
-<!--           <div class="row"> -->
-<!--             <div id="left&#45;body" class="col&#45;md&#45;10"> -->
-<!--               <div id="left&#45;body&#45;panel" class="panel"> -->
-<!--                 <img id="work&#45;full" src="img/work/full/OOI_01.jpg">                 -->
-<!--                 <!&#45;&#45; <span id="title&#38;#45;overlay">Ocean Observitory Inistitive (OOI)</span> &#45;&#45;> -->
-<!--               </div> -->
-<!--  -->
-<!--             </div> -->
-<!--             <!&#45;&#45; right side &#45;&#45;> -->
-<!--             <div class="row"> -->
-<!--             </div> -->
-<!--             <div id="right&#45;nav" class="col&#45;md&#45;2"> -->
-<!--               <div id="right&#45;nav&#45;panel" class="panel"> -->
-<!--                 <div class="panel&#45;heading"> -->
-<!--                   <button id="modal&#45;close" type="button" class="close" data&#45;dismiss="modal">&#38;times;</button> -->
-<!--                 </div> -->
-<!--                 <div class="panel&#45;body"> -->
-<!--                   <ul> -->
-<!--                     <li>HTML</li> -->
-<!--                     <li>CSS</li> -->
-<!--                     <li>Backbone.js</li> -->
-<!--                     <li>Bootstrap</li> -->
-<!--                     <li>JavaScrip</li> -->
-<!--                     <li>jQuery</li> -->
-<!--                   </ul> -->
-<!--                 </div> -->
-<!--               </div> -->
-<!--             </div> -->
-<!--  -->
-<!--  -->
-<!--           </div> -->
-<!--         </div> -->
-<!--  -->
-<!--       </div> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-<!--  -->

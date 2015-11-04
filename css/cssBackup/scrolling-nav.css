@@ -13,15 +13,6 @@ nav.navbar.navbar-default.navbar-fixed-top{
   border-color: #ff5a09;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover, 
-.navbar-default .navbar-nav>.active>a:focus {
-  background: transparent;
-  color: #ff5a09;
-
-}
-
-
 @media(min-width:767px) {
   .navbar {
     padding: 20px 0;
@@ -36,41 +27,65 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+/* The scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+of those sections to<D-e> manage the look and feel of the site. */
+
+  /* .intro-section { */
+  /*   height: 100% */
+  /*   padding-top:150px; */
+  /*   background: #393939; */
+  /* } */
+  /* .about-section { */
+  /*   height: 100%; */
+  /*   padding-top: 150px; */
+  /*   /* text-align: center; */ */
+  /*   background: #6e6e6e; */
+  /* } */
+  /* .services-section { */
+  /*   height: 100%; */
+  /*   padding-top:150px; */
+  /*   background: #393939; */
+  /*  */
+  /* } */
+  /* .contact-section { */
+  /*   height: 100%; */
+  /*   padding-top: 150px; */
+  /*   /* text-align: center; */ */
+  /*   background: #6e6e6e; */
+  /* } */
+  /*  */
+  /* .contact-section { */
+  /*   background: #393939; */
+  /*   color: #6e6e6e; */
+  /* } */
+  /*  */
+  ////
 
   .intro-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #6e6e6e;
+    background: #393939;
   }
 
   .about-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #393939;
-    color: #ff9900;
+    background: #6e6e6e;
   }
 
   .services-section {
-    height: auto;
+    /* height: 100%; */
     padding-top: 150px;
     text-align: center;
-    background: #6e6e6e;
+    background: #393939;
   }
 
   .contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #393939;
-    color: #ff9900;
-
-  }
-
-  section#work{
-    height: 120px
+    background: #6e6e6e;
   }

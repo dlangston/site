@@ -58,7 +58,7 @@
 	display: block;
 	position: relative;
 	padding: 4px;
-	background: #F9F9F9;
+  background: rgba(95,95,95,.4);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	margin: 10px;
 	width: 160px;
@@ -66,9 +66,9 @@
 }
 .ff-items a span{
 	display: block;
-	background: rgba(113,123,161, 0.9);
+	background: rgba(57, 57, 57, 0.9); 
 	font-style: italic;
-	color: #fff;
+	color: #ff9900;
 	font-weight: bold;
 	padding: 20px;
 	position: absolute;
@@ -79,7 +79,7 @@
 	overflow: hidden;
 	opacity: 0;
 	text-align: center;
-	text-shadow: 1px 1px 1px #303857;
+	/* text-shadow: 1px 1px 1px #303857; */
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;

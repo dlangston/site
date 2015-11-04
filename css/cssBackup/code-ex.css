@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(60,60,60);
+}
+.ui-ex {    
+  width: 90%;
+  /* border: 1px solid #dddddd; */
+  margin-top: 45px;
+}
+
+.code-ex {
+  margin-top: 40px;
+}
+
+.c2-ex {
+  width: 100%
+}
+
+.ex-back {
+  padding-top: 20px;
+}

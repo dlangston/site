@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <title>OOI Streams Download Modal Code Example</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/work.css" />
+    <link rel="stylesheet" type="text/css" href="css/bhn-work.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
+
+   <script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+    <script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shCoreDefault.css"/>
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+    <link type="text/css" rel="stylesheet" href="css/code-ex.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+ </head>
+ 
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="ui-ex" src="img/work/full/ooi/steams-fixed-layout.png">
+          <br>
+          <a href="ooiWork.html" class="ex-back fa fa-arrow-left fa-2x"></a>          
+        </div>
+        <div class="col-sm-6 code-ex">
+          <pre class="brush: xml;" >
+<!--Download Modal-->
+<!-- data-backdrop prevents the modal from closing when backdrop is clicked tabindex allows the escape key to be used to close the modal -->
+
+<div class="modal fade" id="download-modal" data-backdrop="static" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="col-md-12 dwn-content">        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!-- </div> <!&#45;&#45; dwn&#45;header &#45;&#45;> -->
+    </div> <!-- col-md-12 -->
+
+    <!--Body-->
+    <div class="col-md-12">
+      <div class="col-md-4">  
+        <img width="150px" src="/img/logos-banners/OOI_Logo.svg">
+      </div>
+
+      <div class="col-md-8">
+        <h3>Streams Download</h3>
+      </div>
+    </div> <!-- .col-md-12 -->
+
+    <div class="col-md-12">
+      <h4 id="streamName" style="padding:15px;">Name</h4>
+    </div>
+
+    <form>
+      <div class="col-md-12">          
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="start-date">Start Date</label>
+            <div class='input-group date' id='start-date'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div> <!-- .input-group.date #start-date -->
+          </div> <!-- .form-group -->
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="end-date">End Date</label>
+            <div class='input-group date' id='end-date'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div> <!-- .input-group.date #start-date -->
+          </div> <!-- .form-group -->
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .col-md-12-->
+
+      <!-- NOT SUPPORTED YET! -->
+      <!-- <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="download-param-select">Select Parameter(s)</label>
+            <select data-width="100%" id='download-param-select' multiple title="Select" class="selectpicker toc-plotting-text">
+            </select>
+          </div> 
+        </div> 
+        <div class="col-md-3">
+          <form role="form">
+            <div class="form-group">
+                <label><input style="position: absolute; bottom: 0;" type="checkbox" id="download-all" value="select-all"> Select All </label>
+            </div>
+          </form>
+        </div> 
+      </div>  -->
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="dlEmail">Email</label>
+            <input class="form-control" id="dlEmail" type="text" name="email" size="25" placeholder="Enter Email">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="type-select">File Type</label>
+            <select id='type-select' class="form-control">
+              <option value="" selected disabled>Download Format</option>
+              <option value="netcdf">NetCDF (.nc)</option>
+              <option value="json">JSON (.json)</option>
+              <!-- <option value="profile_json_download">Profile JSON (.json)</option> -->
+              <option value="csv">CSV (.csv)</option>
+            </select>
+          </div> <!-- .form-group -->
+        </div> <!-- .col-md-4 -->
+      </div>
+
+      <div class="col-md-12">
+        <div class="col-md-8">
+          <input type="checkbox" id="provenance-select" name="provenance" value="provenance"> Include Provenance<br>
+          <input type="checkbox" id="annotation-select" name="annotation" value="annotation"> Include Annotations<br>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default" type="button" id="download-btn" style="margin-left: 65px; margin-bottom: 13px;">Download</button>
+        </div>
+      </div>  
+    </form>
+
+  </div>
+</div> <!-- modal-dialog -->
+</div> <!-- modal fade -->
+
+          </pre>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>
+
+

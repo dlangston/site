@@ -1,0 +1,65 @@
+.parallax-viewport {
+  position: relative;     /* relative, absolute, fixed */
+  overflow: hidden;
+}
+.parallax-layer {
+  position: absolute;
+}
+
+.parallax-port {
+  position: absolute;
+  top:172px; bottom:80px; left:80px; right:80px;
+  background: #eeeeee; overflow: hidden;
+  border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px;
+  width: 500px;
+  height: 360px;
+}
+
+.site_wrap {
+  margin-left: 80px;
+}
+
+#port {
+  /* background: #6e6e6e; */
+  margin: 1.5em 0px;
+  overflow: hidden;
+  position: relative;
+  height: 440px;
+  opacity: .2;
+}
+
+#intro-overlay {
+  background-image: url(/img/port-self-black.png);
+
+  position:absolute;
+  top: 0;
+  width:100%;
+  z-index:0;
+  height:100%;
+  /* background-size: calc(100% + 50px); */
+  background-repeat: no-repeat;
+
+}
+
+#intro-overlay2 {
+  background-image: url(/img/port-self-red-overlay.png);
+
+  position:absolute;
+  top: 0;
+  width:100%;
+  z-index:0;
+  height:100%;
+  /* background-size: calc(100% + 50px); */
+  background-repeat: no-repeat;
+
+}
+/* #intro-overlay { */
+/*   background-image: url(/img/port-self2.png); */
+/*   position:fixed ; */
+/*   top:0; */
+/*   width:100%; */
+/*   z-index:0; */
+/*   height:100%; */
+/*   background-size: calc(100% + 50px); */
+/* } */
+

@@ -1,0 +1,16 @@
+.parallax-port {
+  position: absolute;
+  top:172px; bottom:80px; left:80px; right:80px;
+  background: #eeeeee; overflow: hidden;
+  border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px;
+  width: 500px;
+  height: 360px;
+}
+
+.parallax-layer {
+  position: absolute;
+}
+
+.site_wrap {
+  margin-left: 80px;
+}

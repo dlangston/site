@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <title>Brocur Holders Now</title>
+    <link type="text/css" rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../../fonts/font-awesome-4.4.0/css/font-awesome.min.css" />    
+    <link type="text/css" rel="stylesheet" href="../../css/work.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/work/web/ooi-landing-work.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-sm-10">
+                <div class="col-sm-10">
+          <canvas id="cv" width=640 height=480>
+            It seems you are using an outdated browser that does not support canvas :-(
+          </canvas>
+          <script type="text/javascript" src="js/jsc3d.js"></script>
+          <script type="text/javascript" src="js/jsc3d.touch.js"></script>
+          <script type="text/javascript">
+var canvas = document.getElementById('cv');
+var viewer = new JSC3D.Viewer(canvas);
+viewer.setParameter('SceneUrl', 'img/work/full/old-age/deci-old-age.stl');
+viewer.setParameter('InitRotationX', 0);
+viewer.setParameter('InitRotationY', 210);
+viewer.setParameter('InitRotationZ', 0);
+viewer.setParameter('ModelColor',       '#B69F87');
+viewer.setParameter('BackgroundColor1', '#3C3C3C');
+viewer.setParameter('BackgroundColor2', '#3C3C3C');
+viewer.setParameter('RenderMode', 'textureflat');
+viewer.setParameter('Renderer', 'webgl');
+viewer.init();
+viewer.update();
+          </script>
+        </div>
+
+        <div class="col-sm-10">
+          <img id="langing-full-img" src="../../img/work/full/old-age/old-age01.jpg">
+        </div>
+        <div class="col-sm-10">
+          <img id="langing-full-img" src="../../img/work/full/old-age/old-age02.jpg">
+        </div>
+      </div>
+
+      <div id="title-container">
+        <div class="landing-overlay-tite">
+          <p>Old Age 3D Model</p>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div><a href="../../index.html#work" class="fa fa-arrow-left fa-2x"></a></div>
+        <ul class="work-info">
+          <li>MendelMax 1.5 Dual Extruder</li>
+          <hr class="work-hr">
+          <div class="work-list">
+            <li>ZBrush</li>
+          </div>
+        </ul>
+      </div>
+    </div> <!-- end row -->
+    </div> <!-- end container -->
+
+    <script src="../../js/jquery-1.10.2.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+  </body>
+</html>

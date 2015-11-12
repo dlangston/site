@@ -21,6 +21,14 @@ nav.navbar.navbar-default.navbar-fixed-top{
 
 }
 
+button#toggle-btn {
+  background-color: #6e6e6e;
+  border-color: #6e6e6e;
+}
+
+span#orange-line {
+  background-color: #ff5a09;
+}
 
 @media(min-width:767px) {
   .navbar {
